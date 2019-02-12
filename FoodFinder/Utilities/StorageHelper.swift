@@ -2,8 +2,8 @@
 //  StorageHelper.swift
 //  FoodFinder
 //
-//  Created by Ahmed Askar on 2/6/19.
-//  Copyright © 2019 Ahmed Askar. All rights reserved.
+//  Created by A.Askar on 2/6/19.
+//  Copyright © 2019 A.Askar. All rights reserved.
 //
 
 import Foundation
@@ -12,7 +12,7 @@ class StorageHelper {
     
     //MARK: - Variables
     enum StorageHelperError: Error {
-        case error(_ message:String)
+        case error(String)
     }
     
     enum Directory {

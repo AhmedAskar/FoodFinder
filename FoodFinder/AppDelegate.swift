@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  FoodFinder
 //
-//  Created by Ahmed Askar on 2/6/19.
-//  Copyright © 2019 Ahmed Askar. All rights reserved.
+//  Created by A.Askar on 2/6/19.
+//  Copyright © 2019 A.Askar. All rights reserved.
 //
 
 import UIKit
@@ -14,8 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+    private func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         return true
     }
 

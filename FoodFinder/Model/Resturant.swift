@@ -2,22 +2,40 @@
 //  Resturant.swift
 //  FoodFinder
 //
-//  Created by Ahmed Askar on 2/6/19.
-//  Copyright © 2019 Ahmed Askar. All rights reserved.
+//  Created by A.Askar on 2/6/19.
+//  Copyright © 2019 A.Askar. All rights reserved.
 //
 
 import Foundation
 
-struct Resturant: Codable {
-    
-    let name: String
-    let status: String
-    let sortingValues: SortingValue
+struct ResturantModel: Codable {
+    let restaurants : [Resturant]
 }
 
-enum SortingValues: String {
-    case price = "Price"
+struct Resturant: Codable {
+    var name: String
+    var status: String
+    var sortingValues: SortingValue
+    var isFavorite: Bool? = false
+    func sortValue(_ sortValue : SortingValues) -> String {
+        return sortValue.rawValue
+    }
+}
+
+struct SortingValue: Codable {
+    let averageProductPrice : Int
+    let bestMatch : Float
+    let deliveryCosts : Int
+    let distance : Int
+    let minCost : Int
+    let newest : Float
+    let popularity : Float
+    let ratingAverage : Float
+}
+
+enum SortingValues: String, CaseIterable {
     case bestMatch = "Best Match"
+    case price = "Price"
     case deliveryCosts = "Delivery Costs"
     case distance = "Distance"
     case minCost = "Minimum Cost"
@@ -27,20 +45,7 @@ enum SortingValues: String {
 }
 
 enum OpeningState: String {
-    case open = "Open"
-    case closed = "Closed"
-    case orderAhead = "Order Ahead"
-    case all = "All"
-    
-    var sortValue : String{
-        switch self {
-        case .open:
-            return "open"
-        case .closed:
-            return "closed"
-        case .orderAhead:
-            return "order ahead"
-        default: return ""
-        }
-    }
+    case open = "open"
+    case closed = "closed"
+    case orderAhead = "order ahead"
 }

@@ -6,8 +6,6 @@ target 'FoodFinder' do
   use_frameworks!
 
   # Pods for FoodFinder
-    pod 'RxSwift'
-    pod 'RxCocoa'
     pod 'ASSpinnerView'
 
   target 'FoodFinderTests' do
