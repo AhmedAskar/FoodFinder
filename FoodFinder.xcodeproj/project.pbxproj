@@ -122,9 +122,9 @@
 			children = (
 				14055B03220AE6C300CB3B9C /* AppDelegate.swift */,
 				14055B3F220D8F3400CB3B9C /* Resturants */,
-				14055B28220AE92C00CB3B9C /* Files */,
 				14055B24220AE90400CB3B9C /* Model */,
 				14055B23220AE8FA00CB3B9C /* Utilities */,
+				14055B28220AE92C00CB3B9C /* Files */,
 				14055B07220AE6C300CB3B9C /* Main.storyboard */,
 				14055B0A220AE6C300CB3B9C /* Assets.xcassets */,
 				14055B0C220AE6C300CB3B9C /* LaunchScreen.storyboard */,
