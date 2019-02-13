@@ -48,7 +48,6 @@ extension FilterViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedSortValue = sortingValues[indexPath.row]
-        tableView.reloadData()
         didSelectSortValue?(selectedSortValue)
         dismiss(animated: true, completion: nil)
     }

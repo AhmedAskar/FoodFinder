@@ -24,16 +24,7 @@ class ResturantDataSource : ResturantDataSourceProtocol {
             let allResturants = try getAllResturants()
             let favorites = FavoriteManager.getFavoriteResturants(resturants: allResturants)
             if favorites.count > 0 {
-                
                 let nonFavorites = FavoriteManager.getUnFavoriteResturants(resturants: allResturants)
-//                let nonFavorites2 = allResturants.filter { (resturant) -> Bool in
-//                    print(resturant.name)
-//                    let contains = favorites.contains(where: { (rest) -> Bool in
-//                        print(rest.name)
-//                       return  rest.name != resturant.name
-//                    })
-//                    return contains
-//                }
                 var result = [Resturant]()
                 let sortedFavorite = sortLib.sort(favorites, sortValue)
                 let sortedNonFavorite = sortLib.sort(nonFavorites, sortValue)
